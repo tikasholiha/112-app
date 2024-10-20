@@ -33,7 +33,7 @@ const chartOptions = reactive({
         type: 'donut'
     },
     colors: [
-        '#FF5733', // Kasus Kecalakaan
+        '#FF5733', // Kasus Kecelakaan
         '#C70039', // Kasus Kebakaran
         '#900C3F', // Kasus Ambulan
         '#581845', // Kasus PLN
@@ -58,17 +58,17 @@ const chartOptions = reactive({
         // }
     },
     labels: [
-        'Kecalakaan',
+        'Kecelakaan',
         'Kebakaran',
-        'Ambulan',
+        'Ambulan Gratis & Medis',
         'PLN',
-        'Mobil',
+        'Mobil Jenazah',
         'Penanganan Hewan',
         'Kriminal',
-        'Bencana',
-        'Gawat',
+        'Bencana Alam',
+        'Gawat Darurat Lain',
         'KDRT',
-        'Keamanan'
+        'Keamanan & Ketertiban'
     ],
     legend: {
         show: true, // This hides the legend (right label),
@@ -139,20 +139,20 @@ const chartOptionsDistrict = reactive({
 const stats = computed(() => {
     return [
         {
-            label: 'Kecalakaan',
+            label: 'Kecelakaan',
             color: '#FF5733',
             value: series.value[0]
         },
         { label: 'Kebakaran', color: '#C70039', value: series.value[1] },
-        { label: 'Ambulan', color: '#900C3F', value: series.value[2] },
+        { label: 'Ambulan Gratis & Medis ', color: '#900C3F', value: series.value[2] },
         { label: 'PLN', color: '#581845', value: series.value[3] },
-        { label: 'Mobil', color: '#1C2833', value: series.value[4] },
+        { label: 'Mobil Jenazah', color: '#1C2833', value: series.value[4] },
         { label: 'Penanganan Hewan', color: '#2E86C1', value: series.value[5] },
         { label: 'Kriminal', color: '#28B463', value: series.value[6] },
-        { label: 'Bencana', color: '#F1C40F', value: series.value[7] },
-        { label: 'Gawat', color: '#E67E22', value: series.value[8] },
+        { label: 'Bencana Alam', color: '#F1C40F', value: series.value[7] },
+        { label: 'Gawat Darurat Lain', color: '#E67E22', value: series.value[8] },
         { label: 'KDRT', color: '#8E44AD', value: series.value[9] },
-        { label: 'Keamanan', color: '#34495E', value: series.value[10] },
+        { label: 'Keamanan & Ktertiban', color: '#34495E', value: series.value[10] },
         {
             label: 'Total Result',
             color: '#0d1b2a',

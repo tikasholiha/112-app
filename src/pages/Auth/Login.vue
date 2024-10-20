@@ -1,24 +1,11 @@
 <script setup lang="ts">
 import { ref } from 'vue'
-// Import Swiper Vue.js components
-import ambulance_gratis from 'assets/ambulance_gratis.png'
-import kdrt from 'assets/kdrt.png'
-import kebakaran from 'assets/kebakaran.png'
-import kecelakaan from 'assets/kecelakaan.png'
-import ketertiban from 'assets/ketertiban.png'
-import kriminal from 'assets/kriminal.png'
-import mobil_jenazah from 'assets/mobil_jenazah.png'
-import penanganan_hewan from 'assets/penanganan_hewan.png'
-import pln from 'assets/pln.png'
 import tangerang_kota from 'assets/tangerang_kota.png'
 import logo_update from 'assets/logo_update.png'
 import { useRouter } from 'vue-router'
-
-// Import Swiper styles
 import { Loading, Notify, useMeta } from 'quasar'
 import { api } from 'src/boot/axios'
 import { useAuthStore } from 'src/stores/auth'
-import 'swiper/css'
 
 // common
 const router = useRouter()

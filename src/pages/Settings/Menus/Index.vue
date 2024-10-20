@@ -105,8 +105,6 @@ onMounted(() => {
                         :props="props"
                         :row="props.row"
                         :indent="0"
-                        @onEdit="openFormDialog"
-                        @onDelete="confirmDelete"
                     />
                 </template>
             </q-table>
