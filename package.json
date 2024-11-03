@@ -1,0 +1,44 @@
+{
+    "name": "web-admin",
+    "version": "0.0.1",
+    "description": "Tangerang Siaga 112",
+    "productName": "112 REPORTS",
+    "author": "",
+    "private": true,
+    "scripts": {
+        "test": "echo \"No test specified\" && exit 0",
+        "dev": "quasar dev",
+        "build": "quasar build"
+    },
+    "dependencies": {
+        "@fontsource-variable/nunito": "^5.0.19",
+        "@fontsource-variable/sen": "^5.0.5",
+        "@quasar/extras": "^1.16.4",
+        "apexcharts": "^3.52.0",
+        "axios": "^1.2.1",
+        "jspdf-html2canvas": "^1.5.2",
+        "leaflet": "^1.9.4",
+        "moment": "^2.30.1",
+        "pinia": "^2.0.11",
+        "quasar": "^2.16.0",
+        "vue": "^3.4.18",
+        "vue-iconsax": "^1.9.0",
+        "vue-router": "^4.0.12",
+        "vue3-apexcharts": "^1.5.3",
+        "xlsx": "^0.18.5"
+    },
+    "devDependencies": {
+        "@quasar/app-vite": "^1.9.0",
+        "@types/leaflet": "^1.9.14",
+        "@types/node": "^12.20.21",
+        "autoprefixer": "^10.4.19",
+        "postcss": "^8.4.39",
+        "tailwindcss": "^3.4.4",
+        "typescript": "^4.5.4"
+    },
+    "engines": {
+        "node": "^20 || ^18 || ^16",
+        "npm": ">= 6.13.4",
+        "yarn": ">= 1.21.1"
+    }
+}
